@@ -1,0 +1,41 @@
+<html>
+<center>
+    <h1> My Family Book</h1>
+    <script>
+        var i = 0;
+
+        function update() 
+        {
+            i++;
+            var numbers_of_family_member_in_array = 5
+            if (i > numbers_of_family_member_in_array) {
+                i = 0;
+            }
+            var updatedImage = images[i];
+            var updatedName = names[i];
+            document.getElementById("family_member_image").src = updatedImage;
+            document.getElementById("family_member_name").innerHTML = updatedName;}
+            
+
+
+
+
+            var images = ["5df272bffd9db22295266cd8.jfif", "someone-before-mom-theCityMoms.jpeg", "missingboy-tpr-070420-1.jpg", "seven-year-old-caucasian-boy-260nw-509863291.jpg"]
+
+            var names = ["Dad", "Mom", "Me", "Brother"]
+
+    </script>
+    <p>
+
+        <img id="family_member_image" src="5df272bffd9db22295266cd8.jfif" width=200 height="200">
+
+    </p>
+
+    <h4 id="family_member_name">
+    Dad
+
+    </h4>
+
+
+    <button onclick="update();">Click to flip through!</button>
+</center>
